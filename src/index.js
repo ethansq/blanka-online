@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import Splash from './splash';
 import registerServiceWorker from './registerServiceWorker';
 
 require('./scss/base.scss');
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Splash />,
+    document.getElementById('root')
+);
 
 registerServiceWorker();

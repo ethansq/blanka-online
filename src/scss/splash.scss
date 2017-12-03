@@ -1,0 +1,81 @@
+.content {
+    .left {
+        float:left;
+        width:45%;
+        height:100vh;
+        position:relative;
+    }
+    
+    .right {
+        float:left;
+        width:45%;
+        height:100vh;
+        position:relative;
+    }
+
+    .divider {
+        float:left;
+        width:10%;
+        height:100vh;
+        font-size:0.6em;
+        color:rgba(37, 18, 18, 0.4);
+        text-align:center;
+        font-weight:100;
+
+        div {
+            position:absolute;
+            top:50%;
+            left:50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            
+            &:before, &:after {
+                content:"—"
+            }
+        }
+    }
+
+    .create, .join {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+
+    .new-room, .join-room {
+        display:inline-block;
+        width:auto;
+        height:auto;
+        padding: 8px 24px;
+        background:$byzantine-blue;
+        color:#fff;
+        font-size:0.6em;
+        text-transform:uppercase;
+    }
+
+    .create {
+        right:0px;
+        text-align:right;
+    }
+
+    .join {
+        left:0px;
+
+        input {
+            display:inline-block;
+            height:29px;
+            margin:0px;
+            border-radius:0px;
+            border:1px solid rgba(0,0,0,0.4);
+            padding:0px 8px;
+            font-size:1.2em;
+            margin-bottom:24px;
+            width:calc(70% - 16px);
+        }
+    }
+
+    .header {
+        font-size:0.8em;
+        margin-bottom:8px;
+    }
+}

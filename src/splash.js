@@ -24,6 +24,11 @@ class Splash extends Component {
           <div className="left">
             <div className="create">
               <h4 className="header">Create New Room</h4>
+              <ul>
+                <li><input id="1" type="checkbox"/><label htmlFor="1">Dead Pool</label></li>
+                <li><input id="2" type="checkbox"/><label htmlFor="2">Turn Timer</label></li>
+                <li><input id="3" type="checkbox"/><label htmlFor="3">Involved Only</label></li>
+              </ul>
               <div className="new-room">START</div>
             </div>
           </div>
